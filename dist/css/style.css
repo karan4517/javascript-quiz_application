@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+body{
+    font-family: "Lato";
+
+}
+.wrapper {
+ display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh;
+background-color: brown;
+}
+.welcome_text {
+    background-color: brown;
+    width: 400px;
+}
+.welcome_form input,
+.welcome_form button {
+    display: block;
+    width: 100%;
+}
+.welcome_form input {
+    margin-bottom: 17px;
+    background-color: transparent;
+    border: none;
+    border-bottom:3px solid white ;
+    color: wheat;
+    font-size:50px;
+    text-align: center;
+}
+.welcome_form button {
+    padding: 20px ;
+    font-size: 23px;
+    color: brown;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+}
+.welcome_form button:hover {
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    transform: translateY(-6px);
+    cursor: pointer;
+} 
+.welcome_form input:focus,
+.welcome_form button:focus {
+ outline: none;
+}
+.quizpage {        /*parent*/
+    border-radius: 3px;   
+     display: grid;
+     grid-template-rows:60px  auto;
+     width: 800px;
+     height: 500px;
+     background-color: white;
+   box-shadow:  0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+}
+.quizpage_header {             
+    display: flex;
+    justify-content: space-between;                         /*child*/
+    background-color: white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; 
+    box-shadow: 0px 2px 5px 1px rgba(0,0 , 0, 0.1);
+    z-index:1 ;                                                    /*use for overflow*/      
+    
+
+}
+.quizpage_body {                        /*child*/
+    border-radius: 3px;
+    background-color: rgb(224, 217, 217);
+    padding: 30px 30px;
+
+}
+.quizpage_user {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    height:100%;
+
+}
+.quizpage_timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    widows: 100px ;
+    background-color:brown;
+    color: white;
+    padding: 30px;
+
+}
+.option_group {
+    list-style-type: none;
+    margin: 30px 0;
+}
+.option {
+    background-color: white;
+    width: 300px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: block;       /* now option is transparent and not moving*/
+}
+.option:hover {
+    cursor: pointer ;
+    border: 1px solid brown ;
+    color: brown;
+}
+.btn-next {
+    background-color:brown;
+    color:white;
+    padding: 15px 25px;
+    border: none;
+    transition:0.4s all ;
+
+
+}
+.btn-next:hover {
+    cursor: pointer;
+    background-color: white;
+    color: brown;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+
+}
+.user_name,
+.user_points,
+.user_time {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+
+}
+.active {
+    background-color: brown ;
+    color:white !important;  /*important is use to over write bcz both test and background color got same and gone unvisible*/
+
+
+}
+.award_icon {
+    display: block;
+    font-size: 300px;
+    color: #fff ;
+    ;
+}
